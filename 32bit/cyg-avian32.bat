@@ -10,7 +10,7 @@ set CYG_PKG=%CYG_ROOT%\pkg
 set CYG_SITE=http://mirrors.kernel.org/sourceware/cygwin/
 
 mkdir %CYG_PKG%
-setup-x86.exe -q -W --packages="cmake,mercurial,binutils,git,emacs-w32,make,mingw64-i686-gcc-g++,mingw64-x86_64-gcc-g++" --root=%CYG_ROOT% --local-package-dir=%CYG_PKG% --no-shortcuts --site=%CYG_SITE%
+setup-x86.exe -q -W --packages="binutils,cmake,git,make,mercurial,mingw64-i686-gcc-g++,mingw64-x86_64-gcc-g++,unzip,wget,zip" --root=%CYG_ROOT% --local-package-dir=%CYG_PKG% --no-shortcuts --site=%CYG_SITE%
 
 endlocal
 pause
