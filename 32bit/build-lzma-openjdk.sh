@@ -10,7 +10,7 @@ sed -i -e "s/i686-w64-mingw32-g++/g++/g" \
        -e "s/i686-w64-mingw32-ranlib/ranlib/g" \
        -e "s/i686-w64-mingw32-strip/strip/g" \
        makefile
-export PATH="/cygdrive/Z/media/mingw/mingw32/bin:${PATH}"
+export PATH="`cygpath -u Z:/media/mingw/mingw32/bin`:${PATH}"
 export JAVA_HOME="Z:/media/openjdk/openjdk-1.7.0-u80-unofficial-windows-i586-image"
 make lzma=Z:/media/lzma/lzma920 \
      openjdk=Z:/media/openjdk/openjdk-1.7.0-u80-unofficial-windows-i586-image \
